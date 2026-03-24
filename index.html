@@ -1025,12 +1025,15 @@
                             }
 
                             // Opción 2: Si el widget visual falla, hablamos DIRECTO con n8n por la red
-                            const webhookUrl = 'http://localhost:5678/webhook/b98e1957-87c1-4524-90f7-f9112842c17f/chat';
+                            const webhookUrl = 'https://crazy-bags-push.loca.lt/webhook/b98e1957-87c1-4524-90f7-f9112842c17f/chat';
 
                             try {
                                 const response = await fetch(webhookUrl, {
                                     method: 'POST',
-                                    headers: { 'Content-Type': 'application/json' },
+                                    headers: { 
+                                        'Content-Type': 'application/json',
+                                        'Bypass-Tunnel-Reminder': 'true'
+                                    },
                                     body: JSON.stringify({
                                         chatInput: msg,
                                         sessionId: 'admin-test-' + Date.now(),
@@ -1278,7 +1281,7 @@
 
             // Inicializar usando montaje directo al elemento DOM
             createChat({
-                webhookUrl: 'http://localhost:5678/webhook/b98e1957-87c1-4524-90f7-f9112842c17f/chat',
+                webhookUrl: 'https://crazy-bags-push.loca.lt/webhook/b98e1957-87c1-4524-90f7-f9112842c17f/chat',
                 target: container,
                 mode: 'embedded',
                 showWelcomeScreen: false,
