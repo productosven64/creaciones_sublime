@@ -1,0 +1,156 @@
+{
+  "name": "Rut - Asistente Creaciones Sublime",
+  "nodes": [
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "=¡Hola! 👋 Soy **Rut**, la asistente de Creaciones Sublime.\n¿En qué puedo ayudarte hoy? 😊",
+        "options": {}
+      },
+      "id": "1-chat-trigger",
+      "name": "La Oreja (Chat)",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300],
+      "webhookId": "b98e1957-87c1-4524-90f7-f9112842c17f"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "Eres **Rut**, la asistente virtual amigable y profesional de **Creaciones Sublime**, una empresa de productos personalizados (franelas, tazas, láminas de aluminio y souvenirs) ubicada en La Guaira, Venezuela.\n\nTu misión es:\n1. Saludar al cliente calurosamente.\n2. Preguntar su **nombre completo**.\n3. Preguntar su **número de WhatsApp**.\n4. Preguntar qué **producto desea personalizar** (franela, taza, lámina o souvenir).\n5. Preguntar los **detalles del pedido** (diseño, cantidad, mensaje, etc.).\n6. Confirmar el pedido con el cliente.\n7. Despedirte indicando que **Nano Banana** (el diseñador) los contactará pronto.\n\nSiempre responde en español, con un tono cálido, profesional y amigable. Usa emojis con moderación.\n\nCuando tengas el nombre, WhatsApp, producto y detalles, escribe EXACTAMENTE esta línea al final de tu respuesta (sin comillas):\nPEDIDO_COMPLETO: nombre=[nombre], whatsapp=[numero], producto=[producto], detalles=[detalles]\n\nEsto es una señal interna para guardar el pedido en el sistema."
+        }
+      },
+      "id": "2-ai-agent",
+      "name": "Rut (Agente IA)",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "model": "mistralai/mistral-7b-instruct:free",
+        "options": {
+          "baseURL": "https://openrouter.ai/api/v1"
+        }
+      },
+      "id": "3-openrouter",
+      "name": "Cerebro de Rut (OpenRouter)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [480, 520],
+      "credentials": {
+        "openAiApi": {
+          "id": "AQUI_TU_CREDENCIAL",
+          "name": "OpenRouter (via OpenAI)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.output }}",
+              "operation": "contains",
+              "value2": "PEDIDO_COMPLETO"
+            }
+          ]
+        }
+      },
+      "id": "4-if-pedido",
+      "name": "¿Pedido completo?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeXj7uY-pRW8jS9th77aw_6Ms9on0wGyxoZuTn4oxJq0E0Gig/formResponse",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "entry.114581759",
+              "value": "={{ $json.output.match(/nombre=([^,]+)/)?.[1]?.trim() || 'Sin nombre' }}"
+            },
+            {
+              "name": "entry.1031603882",
+              "value": "={{ $json.output.match(/whatsapp=([^,]+)/)?.[1]?.trim() || 'Sin WhatsApp' }}"
+            },
+            {
+              "name": "entry.1686727504",
+              "value": "={{ $json.output.match(/producto=([^,]+)/)?.[1]?.trim() || 'General' }}"
+            },
+            {
+              "name": "entry.1163192609",
+              "value": "={{ $json.output.match(/detalles=([^\\n]+)/)?.[1]?.trim() || 'Sin detalles' }}"
+            },
+            {
+              "name": "submit",
+              "value": "Submit"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5-guardar-forms",
+      "name": "Guardar en Google Forms",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 160]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $('Rut (Agente IA)').item.json.output }}"
+      },
+      "id": "6-responder-si",
+      "name": "Responder (con pedido)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1200, 160]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.output }}"
+      },
+      "id": "7-responder-no",
+      "name": "Responder (sin pedido)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [960, 440]
+    }
+  ],
+  "connections": {
+    "La Oreja (Chat)": {
+      "main": [
+        [{ "node": "Rut (Agente IA)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Cerebro de Rut (OpenRouter)": {
+      "ai_languageModel": [
+        [{ "node": "Rut (Agente IA)", "type": "ai_languageModel", "index": 0 }]
+      ]
+    },
+    "Rut (Agente IA)": {
+      "main": [
+        [{ "node": "¿Pedido completo?", "type": "main", "index": 0 }]
+      ]
+    },
+    "¿Pedido completo?": {
+      "main": [
+        [{ "node": "Guardar en Google Forms", "type": "main", "index": 0 }],
+        [{ "node": "Responder (sin pedido)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Guardar en Google Forms": {
+      "main": [
+        [{ "node": "Responder (con pedido)", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones Sublime | Personalización de Lujo</title>
+    <meta name="description"
+        content="Plataforma líder en productos personalizados premium. Diseña tu estilo con el Efecto IKEA y calidad artesanal.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para iconos premium -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header>
+        <div class="logotipo">Creaciones <span style="font-family: 'Playfair Display';">Sublime</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#productos"><i class="fas fa-certificate"></i> Servicios</a></li>
+                <li><a href="#catalogo"><i class="fas fa-book-open"></i> Catálogo</a></li>
+                <li><a href="#personalizador"><i class="fas fa-magic"></i> Personalizar</a></li>
+                <li><a href="#academia"><i class="fas fa-graduation-cap"></i> Academia</a></li>
+                <li><a href="#testimonios"><i class="fas fa-comments"></i> Testimonios</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Heróica -->
+    <section id="inicio" class="heroica" style="background-image: url('local.png');">
+        <div class="contenido-heroica animacion-desvanecer">
+            <h1>Calidad que Inspira, <br>Diseños que Perduran</h1>
+            <p>Donde el diseño artesanal se encuentra con tu imaginación. Productos personalizados con acabados de lujo
+                desde La Guaira Venezuela.
+            </p>
+            <div class="botones-heroica">
+                <a href="#catalogo" class="boton boton-primario">Explorar Catálogo</a>
+                <a href="#personalizador" class="boton"
+                    style="color: white; border: 2px solid white; margin-left: 15px;">Más Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestros Servicios Reestructurada -->
+    <section id="productos" class="servicios-contenedor">
+        <div class="titulo-seccion">
+            <span class="insignia">Nuestros Servicios en el Edo. La Guaira</span>
+            <h2>Nuestro servicios en La Guaira</h2>
+            <p>Nuestra experiencia se basa en cuatro áreas fundamentales para brindarte la mejor calidad</p>
+            <div class="subrayado"></div>
+        </div>
+
+        <div class="cuadricula-servicios-pro">
+            <!-- Pilar 1: Estampado en Telas -->
+            <div class="tarjeta-servicio-pro" data-servicio="textiles">
+                <div class="imagen-tarjeta">
+                    <img src="assets/imagenes/servicio_textiles.png" alt="Estampado en Telas">
+                </div>
+                <div class="cuerpo-tarjeta">
+                    <h3>1. Estampado en Telas en Vargas, Edo. La Guaira</h3>
+                    <p>Sublimación de alta calidad para franelas personalizadas con acabados duraderos y colores
+                        vibrantes.</p>
+                </div>
+            </div>
+
+            <!-- Pilar 2: Tazas y Vasos -->
+            <div class="tarjeta-servicio-pro" data-servicio="tazas">
+                <div class="imagen-tarjeta">
+                    <img src="assets/imagenes/servicio_tazas.png" alt="Tazas y Vasos Personalizados">
+                </div>
+                <div class="cuerpo-tarjeta">
+                    <h3>2. Tazas y Vasos Personalizados en Vargas</h3>
+                    <p>Variedad de tazas de cerámica, vasos térmicos y cristalería con diseños únicos para regalos o
+                        promocionales.</p>
+                </div>
+            </div>
+
+            <!-- Pilar 3: Láminas de Aluminio -->
+            <div class="tarjeta-servicio-pro" data-servicio="aluminio">
+                <div class="imagen-tarjeta">
+                    <img src="assets/imagenes/servicio_aluminio.png" alt="Láminas de Aluminio Personalizadas">
+                </div>
+                <div class="cuerpo-tarjeta">
+                    <h3>3. Láminas de Aluminio Personalizadas</h3>
+                    <p>Paneles fotográficos de alta definición con acabado brillante o mate, ideales para decoración
+                        premium y placas conmemorativas.</p>
+                </div>
+            </div>
+
+            <!-- Pilar 4: Souvenirs -->
+            <div class="tarjeta-servicio-pro" data-servicio="souvenirs">
+                <div class="imagen-tarjeta">
+                    <img src="assets/imagenes/servicio_souvenirs.jpg" alt="Souvenirs">
+                </div>
+                <div class="cuerpo-tarjeta">
+                    <h3>4. Souvenirs y Regalos en Vargas</h3>
+                    <p>>Llaveros, gorras y detalles únicos para eventos corporativos y personales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Inspiración -->
+
+    <!-- Sección de Catálogo Extensa -->
+    <section id="catalogo" class="catalogo-contenedor">
+        <div class="titulo-seccion">
+            <span class="insignia">Elegancia & Calidad</span>
+            <h2>Catálogo de Productos</h2>
+            <p>Explora nuestras creaciones exclusivas organizadas por nuestras cuatro áreas maestras.</p>
+            <div class="subrayado"></div>
+        </div>
+
+        <div class="contenedor-filtros">
+            <button class="boton-filtro activo" data-filter="all">Todos</button>
+            <button class="boton-filtro" data-filter="textiles">Textiles</button>
+            <button class="boton-filtro" data-filter="animales">Animales</button>
+            <button class="boton-filtro" data-filter="tasas">Tazas & Vasos</button>
+            <button class="boton-filtro" data-filter="aluminio">Aluminio</button>
+            <button class="boton-filtro" data-filter="souvenirs">Souvenirs</button>
+        </div>
+
+        <div class="cuadricula-catalogo-pro" id="productGrid">
+            <!-- BASES EN MODELO (NUEVO) -->
+            <div class="item-catalogo modelo" data-category="textiles">
+                <div class="etiqueta-item">Franela Modelo</div>
+                <img src="assets/imagenes/FRANELA MODELO.png" alt="Franela Modelo">
+                <div class="capa-item">
+                    <h4>Franela Modelo</h4>
+                    <p>Diseño exclusivo en alta calidad.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Diseña Ahora</button>
+                </div>
+            </div>
+
+            <div class="item-catalogo modelo" data-category="tasas">
+                <div class="etiqueta-item">Taza Modelo</div>
+                <img src="assets/imagenes/TAZA MODELO.png" alt="Taza Modelo">
+                <div class="capa-item">
+                    <h4>Taza Modelo</h4>
+                    <p>Elegancia para tus bebidas favoritas.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Diseña Ahora</button>
+                </div>
+            </div>
+
+            <div class="item-catalogo modelo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio Modelo</div>
+                <img src="assets/imagenes/lamina de aluminio modelo.png" alt="Lámina de Aluminio Modelo">
+                <div class="capa-item">
+                    <h4>Lámina de Aluminio Modelo</h4>
+                    <p>Acabado premium para cualquier superficie.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Diseña Ahora</button>
+                </div>
+            </div>
+
+            <div class="item-catalogo modelo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir Modelo</div>
+                <img src="assets/imagenes/SOUVENIR MODELO.png" alt="Souvenir Modelo">
+                <div class="capa-item">
+                    <h4>Souvenir Modelo</h4>
+                    <p>El recuerdo perfecto para cualquier ocasión.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Diseña Ahora</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist02.png" alt="Franela Cristiana 02">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 02</h4>
+                    <p>Diseño inspirado y único.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist03.png" alt="Franela Cristiana 03">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 03</h4>
+                    <p>Un mensaje que trasciende.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist04.png" alt="Franela Cristiana 04">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 04</h4>
+                    <p>Estilo y espiritualidad.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist05.png" alt="Franela Cristiana 05">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 05</h4>
+                    <p>Elegancia en cada detalle.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist06.png" alt="Franela Cristiana 06">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 06</h4>
+                    <p>Fe en movimiento.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist07.png" alt="Franela Cristiana 07">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 07</h4>
+                    <p>Compromiso y calidad.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist08.png" alt="Franela Cristiana 08">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 08</h4>
+                    <p>Inspiración diaria.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist09.png" alt="Franela Cristiana 09">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 09</h4>
+                    <p>Tu estilo, tu fe.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist10.png" alt="Franela Cristiana 10">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 10</h4>
+                    <p>Acabado sublime.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist11.png" alt="Franela Cristiana 11">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 11</h4>
+                    <p>Esencia y propósito.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist12.png" alt="Franela Cristiana 12">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 12</h4>
+                    <p>Calidad que perdura.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist13.png" alt="Franela Cristiana 13">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 13</h4>
+                    <p>Mensaje potente.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist14.png" alt="Franela Cristiana 14">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 14</h4>
+                    <p>Diseño exclusivo.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Cristiana</div>
+                <img src="assets/imagenes/franelas/fracrist14 (2).png" alt="Franela Cristiana 14 v2">
+                <div class="capa-item">
+                    <h4>Diseño Cristiana 14 (v2)</h4>
+                    <p>Variante especial.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+
+            <!-- Diaria / Diá (3 items) -->
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Diaria</div>
+                <img src="assets/imagenes/franelas/fradia01.png" alt="Franela Diaria 01">
+                <div class="capa-item">
+                    <h4>Diseño Diario 01</h4>
+                    <p>Ideal para el día a día.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Diaria</div>
+                <img src="assets/imagenes/franelas/fradia02.png" alt="Franela Diaria 02">
+                <div class="capa-item">
+                    <h4>Diseño Diario 02</h4>
+                    <p>Comodidad absoluta.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Colección Diaria</div>
+                <img src="assets/imagenes/franelas/fradia03.png" alt="Franela Diaria 03">
+                <div class="capa-item">
+                    <h4>Diseño Diario 03</h4>
+                    <p>Estilo casual premium.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+
+            <!-- Madre -->
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Especial Mamá</div>
+                <img src="assets/imagenes/franelas/framadre01.png" alt="Franela Madre 01">
+                <div class="capa-item">
+                    <h4>Especial Mamá 01</h4>
+                    <p>El mejor regalo para ella.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Especial Mamá</div>
+                <img src="assets/imagenes/franelas/framadre02.png" alt="Franela Madre 02">
+                <div class="capa-item">
+                    <h4>Especial Mamá 02</h4>
+                    <p>Amor en cada puntada.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Especial Mamá</div>
+                <img src="assets/imagenes/franelas/framadre03.png" alt="Franela Madre 03">
+                <div class="capa-item">
+                    <h4>Especial Mamá 03</h4>
+                    <p>Un detalle inolvidable.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+
+            <!-- Uniformes -->
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Uniformes</div>
+                <img src="assets/imagenes/franelas/fraunif01.png" alt="Uniforme 01">
+                <div class="capa-item">
+                    <h4>Uniforme 01</h4>
+                    <p>Profesionalismo y calidad.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Uniformes</div>
+                <img src="assets/imagenes/franelas/fraunif02.png" alt="Uniforme 02">
+                <div class="capa-item">
+                    <h4>Uniforme 02</h4>
+                    <p>Identidad para tu equipo.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Uniformes</div>
+                <img src="assets/imagenes/franelas/fraunif03.png" alt="Uniforme 03">
+                <div class="capa-item">
+                    <h4>Uniforme 03</h4>
+                    <p>Durabilidad extrema.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+
+            <!-- Animales -->
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal01.png" alt="Franela Animal 01">
+                <div class="capa-item">
+                    <h4>Diseño Animal 01</h4>
+                    <p>Estilo salvaje y natural.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal02.png" alt="Franela Animal 02">
+                <div class="capa-item">
+                    <h4>Diseño Animal 02</h4>
+                    <p>Conexión con la naturaleza.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal03.png" alt="Franela Animal 03">
+                <div class="capa-item">
+                    <h4>Diseño Animal 03</h4>
+                    <p>Arte animalista premium.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal04.png" alt="Franela Animal 04">
+                <div class="capa-item">
+                    <h4>Diseño Animal 04</h4>
+                    <p>Detalles realistas en sublimación.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal05.png" alt="Franela Animal 05">
+                <div class="capa-item">
+                    <h4>Diseño Animal 05</h4>
+                    <p>Majestuosidad en cada fibra.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal06.png" alt="Franela Animal 06">
+                <div class="capa-item">
+                    <h4>Diseño Animal 06</h4>
+                    <p>Colores vibrantes y duraderos.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal07.png" alt="Franela Animal 07">
+                <div class="capa-item">
+                    <h4>Diseño Animal 07</h4>
+                    <p>Esencia salvaje y elegante.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal08.png" alt="Franela Animal 08">
+                <div class="capa-item">
+                    <h4>Diseño Animal 08</h4>
+                    <p>Tu animal favorito contigo.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal09.png" alt="Franela Animal 09">
+                <div class="capa-item">
+                    <h4>Diseño Animal 09</h4>
+                    <p>Inspiración natural pura.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="animales">
+                <div class="etiqueta-item">Colección Animales</div>
+                <img src="assets/imagenes/franelas/fraanimal10.png" alt="Franela Animal 10">
+                <div class="capa-item">
+                    <h4>Diseño Animal 10</h4>
+                    <p>Acabado premium garantizado.</p>
+                    <button class="boton-personalizar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+
+            <!-- Tazas & Vasos (01-15) -->
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza02.png" alt="Taza 02">
+                <div class="capa-item">
+                    <h4>Diseño Taza 02</h4>
+                    <p>Cerámica de alta calidad.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza03.png" alt="Taza 03">
+                <div class="capa-item">
+                    <h4>Diseño Taza 03</h4>
+                    <p>Acabado brillante.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza04.png" alt="Taza 04">
+                <div class="capa-item">
+                    <h4>Diseño Taza 04</h4>
+                    <p>Colores vivos.</p><button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza05.png" alt="Taza 05">
+                <div class="capa-item">
+                    <h4>Diseño Taza 05</h4>
+                    <p>Detalle único.</p><button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza06.png" alt="Taza 06">
+                <div class="capa-item">
+                    <h4>Diseño Taza 06</h4>
+                    <p>Resistente al microondas.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza07.png" alt="Taza 07">
+                <div class="capa-item">
+                    <h4>Diseño Taza 07</h4>
+                    <p>Ideal para regalo.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza08.png" alt="Taza 08">
+                <div class="capa-item">
+                    <h4>Diseño Taza 08</h4>
+                    <p>Estilo moderno.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza09.png" alt="Taza 09">
+                <div class="capa-item">
+                    <h4>Diseño Taza 09</h4>
+                    <p>Máxima durabilidad.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza11.png" alt="Taza 11">
+                <div class="capa-item">
+                    <h4>Diseño Taza 11</h4>
+                    <p>Sublimación HD.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza12.png" alt="Taza 12">
+                <div class="capa-item">
+                    <h4>Diseño Taza 12</h4>
+                    <p>Elegancia diaria.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza13.png" alt="Taza 13">
+                <div class="capa-item">
+                    <h4>Diseño Taza 13</h4>
+                    <p>Brillo excepcional.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="tasas">
+                <div class="etiqueta-item">Taza Premium</div>
+                <img src="assets/imagenes/tazas%20y%20vasos/taza14.png" alt="Taza 14">
+                <div class="capa-item">
+                    <h4>Diseño Taza 14</h4>
+                    <p>Toque artístico.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+
+            <!-- Aluminio (01-17) -->
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum01.png" alt="Aluminio 01">
+                <div class="capa-item">
+                    <h4>Afiche Alum 01</h4>
+                    <p>Decoración Premium.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum02.png" alt="Aluminio 02">
+                <div class="capa-item">
+                    <h4>Afiche Alum 02</h4>
+                    <p>Acabado brillante.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum03.png" alt="Aluminio 03">
+                <div class="capa-item">
+                    <h4>Afiche Alum 03</h4>
+                    <p>Alta Definición.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum04.png" alt="Aluminio 04">
+                <div class="capa-item">
+                    <h4>Afiche Alum 04</h4>
+                    <p>Diseño exclusivo.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum05.png" alt="Aluminio 05">
+                <div class="capa-item">
+                    <h4>Afiche Alum 05</h4>
+                    <p>Ideal para oficina.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum06.png" alt="Aluminio 06">
+                <div class="capa-item">
+                    <h4>Afiche Alum 06</h4>
+                    <p>Calidad fotográfica.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum07.png" alt="Aluminio 07">
+                <div class="capa-item">
+                    <h4>Afiche Alum 07</h4>
+                    <p>Brillo duradero.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum08.png" alt="Aluminio 08">
+                <div class="capa-item">
+                    <h4>Afiche Alum 08</h4>
+                    <p>Placa decorativa.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum09.png" alt="Aluminio 09">
+                <div class="capa-item">
+                    <h4>Afiche Alum 09</h4>
+                    <p>Toque moderno.</p><button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum10.png" alt="Aluminio 10">
+                <div class="capa-item">
+                    <h4>Afiche Alum 10</h4>
+                    <p>Resistente y elegante.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum11.png" alt="Aluminio 11">
+                <div class="capa-item">
+                    <h4>Afiche Alum 11</h4>
+                    <p>Regalo especial.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum12.png" alt="Aluminio 12">
+                <div class="capa-item">
+                    <h4>Afiche Alum 12</h4>
+                    <p>Detalle premium.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum13.png" alt="Aluminio 13">
+                <div class="capa-item">
+                    <h4>Afiche Alum 13</h4>
+                    <p>Color vibrante.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum14.png" alt="Aluminio 14">
+                <div class="capa-item">
+                    <h4>Afiche Alum 14</h4>
+                    <p>Arte en metal.</p><button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum15.png" alt="Aluminio 15">
+                <div class="capa-item">
+                    <h4>Afiche Alum 15</h4>
+                    <p>Gran formato HD.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum16.png" alt="Aluminio 16">
+                <div class="capa-item">
+                    <h4>Afiche Alum 16</h4>
+                    <p>Efecto espejo.</p><button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="aluminio">
+                <div class="etiqueta-item">Lámina de Aluminio</div>
+                <img src="assets/imagenes/aluminio/afichealum17.png" alt="Aluminio 17">
+                <div class="capa-item">
+                    <h4>Afiche Alum 17</h4>
+                    <p>Calidad Sublime.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+
+            <!-- Otros: Gorras, Bolsos, Delantales -->
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Accesorios</div>
+                <img src="assets/imagenes/franelas/gorra01.png" alt="Gorra 01">
+                <div class="capa-item">
+                    <h4>Gorra Personalizada</h4>
+                    <p>Estilo y protección.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Accesorios</div>
+                <img src="assets/imagenes/franelas/gorras02.png" alt="Gorras 02">
+                <div class="capa-item">
+                    <h4>Dúo de Gorras</h4>
+                    <p>Para parejas o equipos.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Bolsos</div>
+                <img src="assets/imagenes/franelas/bolso01.png" alt="Bolso 01">
+                <div class="capa-item">
+                    <h4>Tote Bag Sublime</h4>
+                    <p>Ecológico y resistente.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Bolsos</div>
+                <img src="assets/imagenes/franelas/bolsos02.png" alt="Bolsos 02">
+                <div class="capa-item">
+                    <h4>Combo de Bolsos</h4>
+                    <p>Diseños exclusivos.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Hogar</div>
+                <img src="assets/imagenes/franelas/delantar01.png" alt="Delantal 01">
+                <div class="capa-item">
+                    <h4>Delantal de Cocina</h4>
+                    <p>Para el chef de la casa.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="textiles">
+                <div class="etiqueta-item">Hogar</div>
+                <img src="assets/imagenes/franelas/delantar02.png" alt="Delantal 02">
+                <div class="capa-item">
+                    <h4>Delantal Premium</h4>
+                    <p>Protección con estilo.</p><button class="boton-consultar boton-disenar-catalogo">Más
+                        Información</button>
+                </div>
+            </div>
+
+            <!-- Souvenirs -->
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir01.png" alt="Souvenir 01">
+                <div class="capa-item">
+                    <h4>Detalle Especial</h4>
+                    <p>Un recuerdo que perdura para tus invitados.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir02.png" alt="Souvenir 02">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 02</h4>
+                    <p>Calidad excepcional para tus momentos únicos.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir03.png" alt="Souvenir 03">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 03</h4>
+                    <p>Detalles que marcan la diferencia.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir04.png" alt="Souvenir 04">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 04</h4>
+                    <p>Regalos personalizados de alta gama.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir05.png" alt="Souvenir 05">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 05</h4>
+                    <p>Elegancia en cada detalle.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir06.png" alt="Souvenir 06">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 06</h4>
+                    <p>Un toque especial para tus eventos.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir07.png" alt="Souvenir 07">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 07</h4>
+                    <p>Calidad artesanal garantizada.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir08.png" alt="Souvenir 08">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 08</h4>
+                    <p>Diseño exclusivo para ti.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir09.png" alt="Souvenir 09">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 09</h4>
+                    <p>Inmortaliza tus mejores recuerdos.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir10.png" alt="Souvenir 10">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 10</h4>
+                    <p>Estilo y elegancia en un solo producto.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir11.png" alt="Souvenir 11">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 11</h4>
+                    <p>Perfecto para galas y celebraciones.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir12.png" alt="Souvenir 12">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 12</h4>
+                    <p>Calidad que perdura en el tiempo.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir13.png" alt="Souvenir 13">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 13</h4>
+                    <p>Diseños que cuentan historias.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir14.png" alt="Souvenir 14">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 14</h4>
+                    <p>Acabado de lujo para tus invitados.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir15.png" alt="Souvenir 15">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 15</h4>
+                    <p>Regalos inolvidables con sello artesanal.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir16.png" alt="Souvenir 16">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 16</h4>
+                    <p>Sorprende a todos con calidad premium.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenir17.png" alt="Souvenir 17">
+                <div class="capa-item">
+                    <h4>Souvenir Premium 17</h4>
+                    <p>El detalle perfecto para tu evento.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+            <div class="item-catalogo" data-category="souvenirs">
+                <div class="etiqueta-item">Souvenir</div>
+                <img src="assets/imagenes/souvenir/souvenirs01.png" alt="Souvenirs 01">
+                <div class="capa-item">
+                    <h4>Colección Souvenirs</h4>
+                    <p>Explora nuestra gama completa de recuerdos personalizados.</p>
+                    <button class="boton-consultar boton-disenar-catalogo">Más Información</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalizador Visual -->
+    <section id="personalizador" style="background-color: #fff; padding: 80px 5%;">
+        <div class="titulo-seccion">
+            <h2>Personalizador Sublime</h2>
+            <p>Visualiza tu diseño en tiempo real con precisión milimétrica.</p>
+            <div class="subrayado"></div>
+        </div>
+        <div class="contenedor-personalizador">
+            <div class="area-previsualizacion">
+                <canvas id="mainCanvas" class="lienzo-personalizado"></canvas>
+                <div id="qualityIndicator"
+                    style="position: absolute; top: 10px; right: 10px; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; background: #4CAF50; color: white; display: none;">
+                    Calidad Excelente
+                </div>
+            </div>
+            <div class="interaccion-asistente">
+                <div id="n8n-chat-container"
+                    style="height: 600px; width: 100%; border-radius: 20px; box-shadow: var(--sombra-premium); background: #fbfbfb; border: 1px solid #eee; position: relative;">
+                    <!-- Fuerza la visibilidad del componente de chat de n8n -->
+                    <style>
+                        #n8n-chat-container .n8n-chat-window {
+                            position: relative !important;
+                            height: 100% !important;
+                            width: 100% !important;
+                            display: flex !important;
+                            flex-direction: column !important;
+                            box-shadow: none !important;
+                        }
+
+                        #n8n-chat-container .n8n-chat-input-container {
+                            display: flex !important;
+                            padding: 15px !important;
+                            border-top: 1px solid #ddd !important;
+                            background: white !important;
+                        }
+
+                        #n8n-chat-container .n8n-chat-input {
+                            display: block !important;
+                            width: 100% !important;
+                        }
+                    </style>
+                    <!-- El chatbot de Rut se cargará aquí -->
+                </div>
+
+                <!-- Área de entrada manual de emergencia para Rut -->
+                <div id="rut-manual-input"
+                    style="margin-top: 15px; display: flex; gap: 10px; padding: 15px; background: white; border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    <input type="text" id="manualChatField" placeholder="Escribe tu mensaje para Rut aquí..."
+                        style="flex: 1; padding: 12px 20px; border-radius: 50px; border: 1px solid #eee; outline: none; font-size: 0.95rem;">
+                    <button onclick="enviarMensajeARut()"
+                        style="background: var(--oro-primario); color: white; border: none; padding: 12px 25px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: transform 0.2s;">
+                        Enviar 📤
+                    </button>
+                    <script>
+                        async function enviarMensajeARut() {
+                            const input = document.getElementById('manualChatField');
+                            const msg = input.value;
+                            if (!msg) return;
+
+                            // Opción 1: Intentar hablar a través del componente visual (si existe)
+                            const n8nInput = document.querySelector('#n8n-chat-container textarea');
+                            const n8nBtn = document.querySelector('#n8n-chat-container button[type="submit"]');
+
+                            if (n8nInput && n8nBtn) {
+                                n8nInput.value = msg;
+                                n8nInput.dispatchEvent(new Event('input', { bubbles: true }));
+                                n8nBtn.click();
+                                input.value = '';
+                                return;
+                            }
+
+                            // Opción 2: Si el widget visual falla, hablamos DIRECTO con n8n por la red
+                            const webhookUrl = 'http://localhost:5678/webhook/b98e1957-87c1-4524-90f7-f9112842c17f/chat';
+
+                            try {
+                                const response = await fetch(webhookUrl, {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify({
+                                        chatInput: msg,
+                                        sessionId: 'admin-test-' + Date.now(),
+                                        metadata: { tipo_cliente: 'test-manual' }
+                                    })
+                                });
+
+                                if (response.ok) {
+                                    const data = await response.json();
+                                    // Mostramos la respuesta de Rut en el cuadro aunque el widget falle
+                                    alert('Rut dice: ' + (data.output || 'Mensaje recibido, revisa tus ejecuciones en n8n'));
+                                    input.value = '';
+                                } else {
+                                    alert('Error: n8n no respondió correctamente. Asegúrate de tener el Workflow activo.');
+                                }
+                            } catch (e) {
+                                console.error(e);
+                                alert('Error de conexión: Verifica que n8n esté corriendo en localhost:5678');
+                            }
+                        }
+                    </script>
+                </div>
+
+                <div style="margin-top: 15px; text-align: center;">
+                    <p style="font-size: 0.75rem; color: #999;">
+                        Rut te guiará para completar tu pedido paso a paso. ✨
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Academia Sublime -->
+    <section id="academia" style="background-color: var(--blanco-secundario); padding: 80px 5%;">
+        <div class="titulo-seccion">
+            <span class="insignia">Aprende con Nosotros</span>
+            <h2>Academia Sublime</h2>
+            <p>Guías prácticas para que tus productos personalizados duren por siempre.</p>
+            <div class="subrayado"></div>
+        </div>
+
+        <div class="cuadricula-servicios-pro" style="margin-top: 50px;">
+            <div class="tarjeta-servicio-pro">
+                <div class="cuerpo-tarjeta">
+                    <h3>🧼 Guía de Cuidado</h3>
+                    <p>Consejos para lavar y mantener tus franelas sublimadas como nuevas. Evita el calor extremo y
+                        productos abrasivos.</p>
+                </div>
+            </div>
+            <div class="tarjeta-servicio-pro">
+                <div class="cuerpo-tarjeta">
+                    <h3>🎨 Tips de Diseño</h3>
+                    <p>Cómo preparar tus archivos en alta resolución (300 DPI) para obtener colores vibrantes en
+                        aluminio y tazas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="testimonios container">
+        <div class="section-title">
+            <span class="badge"><i class="fas fa-quote-left"></i> Lo que dicen nuestros clientes</span>
+            <h2><i class="fas fa-star" style="color: var(--oro-primario);"></i> Testimonios</h2>
+            <p>Más de 500 clientes satisfechos en La Guaira y toda Venezuela.</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="testimonios-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Mandé a hacer 50 franelas para el uniforme de mi empresa y quedaron espectaculares. La calidad
+                    es increíble y el tiempo de entrega fue perfecto."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MG</div>
+                    <div>
+                        <strong>María González</strong>
+                        <span>Empresaria — Caracas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Las tazas personalizadas para el matrimonio de mi hija quedaron mejor de lo que esperábamos.
+                    Todos los invitados las amaron. ¡100% recomendados!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">CR</div>
+                    <div>
+                        <strong>Carmen Rodríguez</strong>
+                        <span>Cliente — La Guaira</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Pedí láminas de aluminio para la graduación de mi hijo y el resultado fue precioso. Los colores
+                    son vivos y duraderos. Regalaré más de Creaciones Sublime."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JM</div>
+                    <div>
+                        <strong>José Martínez</strong>
+                        <span>Padre de graduando — Maiquetía</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Excelente trabajo con los souvenirs para el evento de nuestra fundación. Rompecabezas y llaveros
+                    de alta calidad. Muy profesionales y puntuales."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LP</div>
+                    <div>
+                        <strong>Luisa Pérez</strong>
+                        <span>Coordinadora de eventos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact container">
+        <div class="section-title">
+            <span class="badge"><i class="fas fa-paper-plane"></i> Hablemos de tu idea</span>
+            <h2><i class="fas fa-envelope" style="color: var(--oro-primario);"></i> Contacto</h2>
+            <p>Cuéntanos qué deseas personalizar y te responderemos lo antes posible.</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Datos de contacto</h3>
+                <p><strong>WhatsApp:</strong> +58 424-2092923</p>
+                <p><strong>Correo:</strong> creaciones.sublime.2025@gmail.com</p>
+                <p><strong>Ubicación:</strong> La Guaira, Vargas, Venezuela</p>
+                <p>Escríbenos por WhatsApp y te respondemos a la brevedad. 😊</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="cf-nombre">Nombre completo *</label>
+                    <input type="text" id="cf-nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cf-whatsapp">WhatsApp *</label>
+                    <input type="tel" id="cf-whatsapp" name="whatsapp" placeholder="+58 4XX XXX XXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cf-servicio">¿Qué deseas personalizar? *</label>
+                    <select id="cf-servicio" name="servicio" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Franelas / Textiles">Franelas / Textiles</option>
+                        <option value="Tazas y vasos">Tazas y vasos</option>
+                        <option value="Lámina de aluminio">Lámina de aluminio</option>
+                        <option value="Souvenirs y regalos">Souvenirs y regalos</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-top: 5px;">
+                    <label for="cf-imagen"><i class="fas fa-image"></i> Tu idea / Referencia (Opcional)</label>
+                    <input type="file" id="cf-imagen" name="imagen" accept="image/*" class="custom-file-input">
+                    <small style="color: #888; margin-top: 5px;">Puedes subir un boceto o referencia (PNG,
+                        JPG).</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="cf-mensaje">Cuéntanos tu idea</label>
+                    <textarea id="cf-mensaje" name="mensaje" rows="4"
+                        placeholder="Describe el diseño, cantidad y cualquier detalle."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary contact-wa-btn">
+                    📲 Enviar por WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- Pie de Página -->
+    <footer>
+        <div class="contenido-footer">
+            <div>
+                <div class="logotipo" style="margin-bottom: 20px;">Creaciones Sublime</div>
+                <p>Artesanía y tecnología unidas para crear recuerdos inolvidables en el Edo. La Guaira.</p>
+                <!-- Redes Sociales -->
+                <div class="redes-sociales" style="margin-top: 20px; display: flex; gap: 15px;">
+                    <a href="#" style="font-size: 1.5rem; color: var(--oro-primario);">📱</a>
+                    <a href="#" style="font-size: 1.5rem; color: var(--oro-primario);">📸</a>
+                    <a href="#" style="font-size: 1.5rem; color: var(--oro-primario);">📘</a>
+                </div>
+            </div>
+            <div>
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="#" style="color: #ccc;">Sobre Nosotros</a></li>
+                    <li><a href="#" style="color: #ccc;">Envíos y Devoluciones</a></li>
+                    <li><a href="#" style="color: #ccc;">Taller en Vivo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Academia</h4>
+                <ul>
+                    <li><a href="#" style="color: #ccc;">Guía de Cuidado</a></li>
+                    <li><a href="#" style="color: #ccc;">Tips de Diseño</a></li>
+                    <li><a href="#" style="color: #ccc;">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            &copy; 2026 Creaciones Sublime. Todos los derechos reservados. | Diseñado con UX Premium.
+        </div>
+    </footer>
+
+    <!-- Botón flotante para consulta -->
+    <a href="#contacto" id="whatsapp-flotante" class="boton-whatsapp"
+        style="width: auto; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 10px; position: fixed; bottom: 20px; right: 20px; z-index: 1000; background-color: #25D366; color: white; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: opacity 0.3s, visibility 0.3s;">
+        <i class="fab fa-whatsapp"></i> WhatsApp Directo
+    </a>
+
+    <!-- Configuración Integrada del Agente Rut (n8n Chat) -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        window.iniciarChatRut = function (intento = 'consulta', producto = 'General') {
+            const container = document.getElementById('n8n-chat-container');
+            if (container) container.innerHTML = '';
+
+            const saludoInicial = intento === 'diseno'
+                ? [
+                    '¡Hola Creativo! 🎨 Soy **Rut**.',
+                    `¿Diseñamos un **${producto}**? ✨`,
+                    'Cuéntame tu idea para que **Nano Banana** la haga realidad. 🍌',
+                    'Para empezar, dime tu nombre y cómo contactarte.'
+                ]
+                : [
+                    '¡Hola! 👋 Soy **Rut**.',
+                    '¿Dudas con los precios? Te ayudo con mucho gusto. ❤️',
+                    '¿Me das tu nombre y contacto?'
+                ];
+
+            // Inicializar usando montaje directo al elemento DOM
+            createChat({
+                webhookUrl: 'http://localhost:5678/webhook/b98e1957-87c1-4524-90f7-f9112842c17f/chat',
+                target: container,
+                mode: 'embedded',
+                showWelcomeScreen: false,
+                defaultLanguage: 'es',
+                allowFileUploads: false,
+                initialMessages: saludoInicial,
+                title: 'Rut - Asistente Sublime',
+                subtitle: 'Te ayudo con tu pedido ✨',
+                metadata: {
+                    tipo_cliente: intento,
+                    producto_interes: producto
+                },
+                i18n: {
+                    es: {
+                        getStarted: 'Comenzar',
+                        inputPlaceholder: 'Escribe tu mensaje aquí...',
+                        title: 'Rut - Asistente Sublime',
+                        subtitle: 'Te ayudo con tu pedido ✨',
+                        footer: '',
+                        errorMessage: 'Hubo un error. Intenta de nuevo.',
+                        sendButtonTooltip: 'Enviar',
+                    },
+                    en: {
+                        getStarted: 'Comenzar',
+                        inputPlaceholder: 'Escribe tu mensaje aquí...',
+                        title: 'Rut - Asistente Sublime',
+                        subtitle: 'Te ayudo con tu pedido ✨',
+                        footer: '',
+                        errorMessage: 'Hubo un error. Intenta de nuevo.',
+                        sendButtonTooltip: 'Enviar',
+                    }
+                },
+                style: {
+                    '--chat--color-primary': '#D4AF37',
+                    '--chat--color-primary-shade-50': '#C9A227',
+                    '--chat--color-primary-shade-100': '#B8911F',
+                    '--chat--bubble--background': '#D4AF37',
+                    '--chat--bubble--color': '#FFFFFF',
+                    '--chat--header--background': '#2F2F2F',
+                    '--chat--header--color': '#FFFFFF',
+                    '--chat--input--border-active-color': '#D4AF37',
+                    '--chat--send-button--background': '#D4AF37',
+                }
+            });
+            window.chatInicializado = true;
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retardo inicial para dar tiempo a la carga de estilos
+            setTimeout(() => {
+                if (!window.chatInicializado) {
+                    window.iniciarChatRut('consulta', 'General');
+                }
+            }, 800);
+
+            // Parche de idioma: reemplaza textos en inglés del widget n8n por español
+            const traducirChat = () => {
+                const container = document.getElementById('n8n-chat-container');
+                if (!container) return;
+                container.querySelectorAll('*').forEach(el => {
+                    if (el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE) {
+                        const txt = el.childNodes[0].nodeValue.trim();
+                        if (txt === 'Hi there!') el.childNodes[0].nodeValue = '¡Hola!';
+                        if (txt === "Start a chat. We're here to help you 24/7.") el.childNodes[0].nodeValue = 'Rut te ayuda con tu pedido 24/7.';
+                        if (txt === 'New conversation') el.childNodes[0].nodeValue = 'Nueva conversación';
+                        if (txt === 'Start chatting') el.childNodes[0].nodeValue = 'Comenzar';
+                        if (txt === 'How can I help you?') el.childNodes[0].nodeValue = '¿En qué te ayudo?';
+                        if (txt === 'Type your question..') el.childNodes[0].nodeValue = 'Escribe tu mensaje...';
+                    }
+                    // También en placeholders
+                    if (el.placeholder && el.placeholder.includes('Type your question')) {
+                        el.placeholder = 'Escribe tu mensaje...';
+                    }
+                });
+            };
+
+            // Observar cambios en el DOM para aplicar traducciones automáticamente
+            const observer = new MutationObserver(traducirChat);
+            setTimeout(() => {
+                const container = document.getElementById('n8n-chat-container');
+                if (container) {
+                    observer.observe(container, { childList: true, subtree: true, characterData: true });
+                    traducirChat(); // Aplicar de inmediato también
+                }
+            }, 1500);
+        });
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
